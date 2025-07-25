@@ -52,7 +52,7 @@ export const MoodJournal = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-lavender to-mint-green p-4">
+    <div className="min-h-screen p-4 relative" style={{ background: 'var(--gradient-mood)' }}>
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <button 
@@ -69,7 +69,7 @@ export const MoodJournal = () => {
 
       {/* Mood Selection */}
       <div className="mb-8">
-        <h2 className="text-lg font-semibold text-foreground mb-4 text-center font-poppins">
+        <h2 className="text-lg font-semibold mb-4 text-center handwritten">
           How are you feeling today?
         </h2>
         
@@ -120,7 +120,7 @@ export const MoodJournal = () => {
       {/* Recent Entries */}
       {entries.length > 0 && (
         <div className="mt-12 max-w-lg mx-auto">
-          <h3 className="text-lg font-semibold text-foreground mb-4 text-center font-poppins">
+          <h3 className="text-lg font-semibold text-foreground mb-4 text-center section-header">
             Recent Entries
           </h3>
           <div className="space-y-3">
@@ -150,6 +150,20 @@ export const MoodJournal = () => {
         <button className="btn-dreamy w-14 h-14 rounded-full shadow-lg text-xl">
           ✨
         </button>
+      </div>
+
+      {/* Floating Clouds */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        <div className="cloud cloud-1"></div>
+        <div className="cloud cloud-2"></div>
+      </div>
+
+      {/* Floating Stars */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="star" style={{ top: '15%', left: '15%', animationDelay: '0s' }}></div>
+        <div className="star" style={{ top: '35%', left: '85%', animationDelay: '1s' }}></div>
+        <div className="star" style={{ top: '75%', left: '25%', animationDelay: '2s' }}></div>
+        <div className="star" style={{ top: '45%', left: '70%', animationDelay: '1.5s' }}></div>
       </div>
     </div>
   );
