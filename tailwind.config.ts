@@ -61,7 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				/* Floral Colors */
+				'baby-pink': 'hsl(var(--baby-pink))',
+				'rose-pink': 'hsl(var(--rose-pink))',
+				'lavender': 'hsl(var(--lavender))',
+				'soft-peach': 'hsl(var(--soft-peach))',
+				'mint-green': 'hsl(var(--mint-green))'
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'dancing': ['Dancing Script', 'cursive'],
+				'poppins': ['Poppins', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
